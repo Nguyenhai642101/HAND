@@ -1,0 +1,1662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1859</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_nhap_thong_tin">
+     <attribute name="title">
+      <string>Nhập thông tin</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>170</y>
+        <width>800</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="title">
+       <string>Thông tin</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>180</width>
+         <height>240</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="chonAnhBT">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>320</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Chọn ảnh</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="birthdayTE">
+       <property name="geometry">
+        <rect>
+         <x>338</x>
+         <y>117</y>
+         <width>422</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="nameTE">
+       <property name="geometry">
+        <rect>
+         <x>338</x>
+         <y>51</y>
+         <width>422</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="addressTE">
+       <property name="geometry">
+        <rect>
+         <x>338</x>
+         <y>183</y>
+         <width>422</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>271</x>
+         <y>117</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ngày sinh:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>271</x>
+         <y>51</y>
+         <width>27</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Tên:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>271</x>
+         <y>183</y>
+         <width>44</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Địa chỉ:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>170</y>
+        <width>800</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="title">
+       <string>Kết quả</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QTabWidget" name="Tab_diem_va_ket_qua">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>780</width>
+         <height>460</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_1">
+        <attribute name="title">
+         <string>Vị trí các điểm tay phải</string>
+        </attribute>
+        <widget class="QTableWidget" name="bang_diem_tay_phai">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>750</width>
+           <height>420</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>8</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>9</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>10</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Vị trí các điểm tay trái</string>
+        </attribute>
+        <widget class="QTableWidget" name="bang_diem_tay_trai">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>750</width>
+           <height>420</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>8</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>9</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>10</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên điểm</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Vị trí</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>Khoảng cách thuộc tay phải</string>
+        </attribute>
+        <widget class="QTableWidget" name="bang_khoang_cach_tay_phai">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>750</width>
+           <height>420</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>8</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>9</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>10</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Khoảng cách</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Khoảng cách</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Khoảng cách</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Khoảng cách</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>Khoảng cách thuộc tay trái</string>
+        </attribute>
+        <widget class="QTableWidget" name="bang_khoang_cach_tay_trai">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>750</width>
+           <height>420</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>8</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>9</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>10</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Khoảng cách</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Khoảng cách</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Khoảng cách</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kích thước ảnh</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tên</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Khoảng cách</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="XemKQBT">
+      <property name="geometry">
+       <rect>
+        <x>1500</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Xem KQ</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LuuBT">
+      <property name="geometry">
+       <rect>
+        <x>1650</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lưu </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tabTruocBT_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tab trước</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tabSauBT_2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tab sau</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>768</x>
+        <y>51</y>
+        <width>362</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>NHẬP THÔNG TIN</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="xoaBT">
+      <property name="geometry">
+       <rect>
+        <x>1350</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Xoá</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>1580</x>
+        <y>690</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>1494</x>
+        <y>690</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Processing</string>
+      </property>
+     </widget>
+     <zorder>label</zorder>
+     <zorder>groupBox</zorder>
+     <zorder>groupBox_2</zorder>
+     <zorder>XemKQBT</zorder>
+     <zorder>LuuBT</zorder>
+     <zorder>tabTruocBT_2</zorder>
+     <zorder>tabSauBT_2</zorder>
+     <zorder>xoaBT</zorder>
+     <zorder>progressBar</zorder>
+     <zorder>label_2</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_chup_anh">
+     <attribute name="title">
+      <string>Chụp ảnh</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>310</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Điều chỉnh ngưỡng</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>381</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QSlider" name="nguongSlider">
+          <property name="minimum">
+           <number>0</number>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>65</number>
+          </property>
+          <property name="sliderPosition">
+           <number>65</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="nguongDSB">
+          <property name="decimals">
+           <number>0</number>
+          </property>
+          <property name="minimum">
+           <double>0.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>254.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>65.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="doSangLB_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>377</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ngưỡng tách nền</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="cameraOptionGB">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>411</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Chọn Camera</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>381</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <widget class="QLabel" name="chonCameraLB">
+                <property name="text">
+                 <string>Chọn camera:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QComboBox" name="chonCamCB">
+                <item>
+                 <property name="text">
+                  <string>Tắt</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Camera 0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Camera 1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Camera 2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Camera 3</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="chonKenhLB">
+                <property name="text">
+                 <string>Chọn kênh:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QComboBox" name="chonKenhCB">
+                <item>
+                 <property name="text">
+                  <string>RGB</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Grayscale</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="1" column="0">
+               <widget class="QRadioButton" name="smallScreenRB">
+                <property name="text">
+                 <string>Màn hình nhỏ</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QRadioButton" name="orginalScreenRB">
+                <property name="text">
+                 <string>Màn hình gốc</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="doSangLB">
+            <property name="text">
+             <string>Độ sáng</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QSlider" name="BrightnessSlider">
+              <property name="minimum">
+               <number>-50</number>
+              </property>
+              <property name="maximum">
+               <number>50</number>
+              </property>
+              <property name="sliderPosition">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doSangDSB">
+              <property name="decimals">
+               <number>0</number>
+              </property>
+              <property name="minimum">
+               <double>-50.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>50.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>0.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="doSangLB_2">
+            <property name="text">
+             <string>Độ tương phản</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QSlider" name="ContrastSlider">
+              <property name="minimum">
+               <number>-50</number>
+              </property>
+              <property name="maximum">
+               <number>50</number>
+              </property>
+              <property name="sliderPosition">
+               <number>0</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doTuongPhanDSB">
+              <property name="decimals">
+               <number>0</number>
+              </property>
+              <property name="minimum">
+               <double>-50.000000000000000</double>
+              </property>
+              <property name="maximum">
+               <double>50.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>0.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>450</y>
+        <width>411</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Tuỳ chọn</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>341</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="2" column="0">
+         <widget class="QRadioButton" name="hienduongbaoQRB">
+          <property name="text">
+           <string>Hiện đường bao</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QRadioButton" name="tatduongbaoQRB">
+          <property name="text">
+           <string>Tắt đường bao</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>600</y>
+        <width>411</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Chọn màn hình</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>341</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="chonCameraLB_2">
+          <property name="text">
+           <string>Chọn màn hình</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="choManHinhCB">
+          <item>
+           <property name="text">
+            <string>Tự động</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2:3 (1080 x 720) </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>16:9 (960 x 540) </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>16:9 (640 x 360) </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4:3 (960 x 720) </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4:3 (640 x 480) </string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_9">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>70</y>
+         <width>341</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QLabel" name="chonCameraLB_3">
+          <property name="text">
+           <string>Điều chỉnh hướng</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="chonDieuHuongCB">
+          <item>
+           <property name="text">
+            <string>Không</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Lật</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Đảo ngược</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Xoay 90 độ sang trái</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Xoay 90 độ sang phải</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="xemKetQuaBT">
+      <property name="geometry">
+       <rect>
+        <x>1500</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Xem ảnh kết quả</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tabSauBT">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tab sau</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chupBT">
+      <property name="geometry">
+       <rect>
+        <x>1650</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Chụp</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tabTruocBT">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tab trước</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>449</x>
+        <y>30</y>
+        <width>1381</width>
+        <height>840</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Camera</string>
+      </property>
+      <widget class="QLabel" name="anhMauLB">
+       <property name="geometry">
+        <rect>
+         <x>1120</x>
+         <y>30</y>
+         <width>240</width>
+         <height>320</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../handsample/1.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>1210</x>
+         <y>360</y>
+         <width>55</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ảnh mẫu</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cameraLB">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>1080</width>
+         <height>720</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="noteLB">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>760</y>
+         <width>1340</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="SoLB">
+       <property name="geometry">
+        <rect>
+         <x>1120</x>
+         <y>430</y>
+         <width>240</width>
+         <height>320</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>64</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>750</y>
+        <width>411</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Chọn chế độ chụp</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget_8">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>341</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="1" column="0">
+         <widget class="QRadioButton" name="tuDongQRB">
+          <property name="text">
+           <string>Tự động</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QRadioButton" name="thuCongQRB">
+          <property name="text">
+           <string>Thủ công</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="luiBT">
+      <property name="geometry">
+       <rect>
+        <x>1050</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lùi</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tienBT">
+      <property name="geometry">
+       <rect>
+        <x>1200</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tiến</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resetBT">
+      <property name="geometry">
+       <rect>
+        <x>1350</x>
+        <y>920</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reset</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1859</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuCalibration">
+    <property name="title">
+     <string>Calibration</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuQuit">
+    <property name="title">
+     <string>Quit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuCalibration"/>
+   <addaction name="menuQuit"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open CalibWindow</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
