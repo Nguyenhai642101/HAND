@@ -11,6 +11,41 @@ mp_drawing_styles = mp.solutions.drawing_styles
 
 # nguong = 90
 
+def TimDiemMoc(image):
+    """
+    Hàm tìm điểm mốc bàn tay
+    :param image: ảnh bàn tay
+    :return: mảng điểm trên bàn tay
+    """
+    mp_drawing = mp.solutions.drawing_utils
+    mp_hands = mp.solutions.hands
+
+    # For static images:
+    with mp_hands.Hands(
+            static_image_mode=True,
+            max_num_hands=1,
+            min_detection_confidence=0.3) as hands:
+        # image = imutils.resize(image, height=800)
+        results = hands.process(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+        # print('Handedness:', results.multi_handedness)
+        for hand in results.multi_handedness:
+            handType = hand.classification[0].label
+            # print(handType)
+        image_height, image_width, _ = image.shape
+        annotated_image = image.copy()
+        hand = results.multi_hand_landmarks[0]
+        mp_drawing.draw_landmarks(
+            annotated_image, hand, mp_hands.HAND_CONNECTIONS)
+
+        mang_diem_moc = []
+        for idx, landmark in enumerate(hand.landmark):
+            mang_diem_moc.append((round(landmark.x * image_width), round(landmark.y * image_height)))
+
+        for i, moc in enumerate(mang_diem_moc):
+            cv2.circle(annotated_image, moc, 2, (255, 0, 0), -1)
+            cv2.putText(annotated_image, str(i), moc, cv2.FONT_HERSHEY_COMPLEX_SMALL, 0.9, (0, 0, 255), 1)
+
+        return mang_diem_moc, annotated_image, handType, image
 
 def ChupAnhTuCamera(camera_index=0):
     """
